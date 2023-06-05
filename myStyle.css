@@ -1,0 +1,274 @@
+/* Navbar */
+nav {
+    color: white;
+    display: flex;
+    justify-content: right;
+    background-color: rgb(128, 128, 128);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    float:left;
+}
+
+nav ul li a {
+    display: block;
+    border: 1px solid;
+    border-radius: .5em;
+    padding: .5em 1em;
+    margin: .5em;
+    flex-wrap: wrap;
+    flex: 1 1 50%;
+}
+
+nav a:hover{
+    color:white;
+}
+
+nav a:active{
+    color:blue;
+}
+
+h1{
+    text-align: center;
+}
+
+
+/* home page*/
+section {
+    background-color: rgb(62, 181, 185);
+    border-bottom: 1px solid black;
+}
+
+.homepage h1 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 3.2rem;
+}
+
+.homepage h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    width: auto;
+}
+
+.picture img {
+    border-radius: 50%;
+    box-shadow: 8px 8px 8px 8px rgba(0,0,0,.2);
+    max-width: 100%;
+    height: auto;
+    margin-left: 30px;
+}
+
+.picture img:hover{
+    box-shadow: 16px 16px 16px 16px rgba(0,0,0,.2);
+    transition-duration: 2s;
+}
+
+.aboutme-text h2 {
+    text-align: center;
+}
+
+.aboutme-text p {
+    text-align: left;
+    margin-right: 20px;
+    font-size:large;
+}
+
+
+/* skills page*/
+.skills h2 {
+    text-align: center;
+}
+
+.skills .card{
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,.2);
+}
+
+.skills .card:hover {
+    border: 1px solid black;
+    box-shadow: 8px 8px 8px 8px rgba(0,0,0,.2);
+    transition-duration: 1s;
+}
+
+.skills .card-header{
+    background-color: rgb(200, 179, 179);
+}
+
+.skills .card-body{
+    background-color: rgb(233, 223, 223);
+}
+
+.skills .card-footer{
+    background-color: rgb(200, 179, 179);
+}
+
+.showListbutton{
+    background-color: white;
+    border: 2px solid blue;
+    color: black;
+    font-size: 16px;
+    padding: 10px 24px;
+    border-radius: 12px;
+    transition-duration: 1s;
+    text-align: center;
+    align-items: center;
+}
+
+.showListbutton:hover{
+    background-color: blue;
+    color: white;
+    box-shadow: 0 12px 14px 0 rgba(0,0,0,.2);
+}
+
+.showListbutton:active{
+    background-color: blue;
+    box-shadow: 0 12px 14px 0 rgba(0,0,0,.2);
+    transform: translateY(2px);
+}
+
+
+/* projects page*/
+.projects h2 {
+    text-align: center;
+}
+
+.projects .card{
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,.2);
+}
+
+.projects .card-header{
+    background-color: rgb(200, 179, 179);
+}
+
+.projects .card-body{
+    background-color: rgb(233, 223, 223);
+}
+
+.projects .card-footer{
+    background-color: rgb(200, 179, 179);
+}
+
+.projects .card:hover {
+    border: 1px solid black;
+    box-shadow: 8px 8px 8px 8px rgba(0,0,0,.2);
+    transition-duration: 1s;
+}
+
+.githubButton{
+    background-color: white;
+    border: 2px solid green;
+    color: black;
+    font-size: 16px;
+    padding: 10px 24px;
+    border-radius: 12px;
+    transition-duration: 1s;
+}
+
+.githubButton:hover{
+    background-color: green;
+    color: white;
+    box-shadow: 0 12px 14px 0 rgba(0,0,0,.2);
+}
+
+.githubButton:active{
+    background-color: green;
+    color: white;
+    box-shadow: 0 12px 14px 0 rgba(0,0,0,.2);
+    transform: translateY(2px);
+}
+
+
+/* contact page*/
+.contact-text p{
+    text-align: center;
+}
+
+.contact-form {
+    text-align: center;
+    align-items: center;
+    padding: 16px 24px;
+    margin: 64px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: silver;
+    box-shadow: 12px 12px 12px 12px rgba(.2,.2,.2,.2);
+}
+
+.contact-form input {
+    width: 50%;
+    padding: 10px 16px;
+    margin: 6px 0;
+    border: 2px solid gray;
+    border-radius: 6px;
+    background-color: #f4eeee;
+}
+
+.contact-form input:hover{
+    border: 2px solid black;
+    transition-duration: 1s;
+}
+
+.contact-form input:active{
+    border: 2px solid black;
+    background-color: white;
+}
+
+.contact-form textarea{
+    width: 50%;
+    padding: 14px 18px;
+    margin: 6px 0;
+    border: 2px solid grey;
+    border-radius: 6px;
+    background-color: #f4eeee;
+}
+
+.contact-form textarea:hover{
+    border: 2px solid black;
+    transition-duration: 1s;
+}
+
+.contact-form textarea:active{
+    border: 2px solid black;
+    background-color: white;
+}
+
+.submitButton{
+    background-color: white;
+    border: 2px solid blue;
+    color: black;
+    font-size: 16px;
+    padding: 10px 24px;
+    border-radius: 12px;
+    transition-duration: 1s;
+}
+
+.submitButton:hover{
+    background-color: blue;
+    color: white;
+    box-shadow: 0 12px 14px 0 rgba(0,0,0,.2);
+}
+
+.submitButton:active{
+    background-color: blue;
+    box-shadow: 0 12px 14px 0 rgba(0,0,0,.2);
+    transform: translateY(2px);
+}
+
+
+/* footer bar */
+.footer-text{
+    text-align: center;
+    color: white;
+    background-color: grey;
+    box-shadow: 0 2px 4px 0 rgba(.2,.2,.2,.2);
+}
+
+.footer-text .i{
+    font-size: medium;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <title>Muneeb's Portfolio</title>
+
+        <link rel="stylesheet" href="myStyle.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <header>   
+            <nav class ="navbar navbar-expand-md navbar-dark" id = "navBar">
+                <a class = "navbar-brand" href="home.html" style="color: white; padding: 10px;">Muneeb Khan</a>
+                <button class = "navbar-toggler" type = "button" data-bs-toggle="collapse" data-bs-target="#navCollapse" 
+                aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class = "navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id = "navCollapse">
+                        <ul class = "navbar-nav me-auto mb-2 mb-md-0">
+                            <li class = "nav-item">
+                                <a class="nav-link" href = "home.html">Home</a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class="nav-link" href = "skills.html">Skills</a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class="nav-link" href = "projects.html">Projects</a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class="nav-link" href = "contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h5 id="timer"></h5>
+            </nav>  
+        </header>
+
+        <section class = "projects" id = "projects">
+            <br><br>
+            <div class= "projects-text">
+              <h1>My Projects</h1> 
+            </div>
+            <br><br>
+            <button id = "showListbutton" class="showListbutton" onclick = "showList('projectslist')">Click here to show projects</button>
+            <div id = "projectslist" class ="container text-center" style="display: none;">
+                <div class = "row">
+                    <div class = "col">
+                        <div class = "card">
+                            <div class = "card-header">
+                                <h2>Westeam</h2>
+                            </div>
+                            <div class = "card-body">
+                                <p>The purpose of this project was to provide the user with a list of recommended games they should 
+                                    purchase based on what their friends currently own.
+                                </p>
+                                <br>
+                                <p>Technologies used include:</p>
+                                <p>HTML, CSS, Javascript, and NodeJS</p>
+                            </div>
+                            <div class = "card-footer">
+                                <button id = "githubButton" class = "githubButton" onclick="westeamPage()">Github link</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "col">
+                        <div class = "card">
+                            <div class = "card-header">
+                                <h2>Lightning Task Manager</h2>
+                            </div>
+                            <div class = "card-body">
+                                <p>The purpose of this project was to create a table where users can add, edit or remove tasks
+                                    they may even filter the tasks.
+                                </p>
+                                <br>
+                                <p>Technologies used include:</p>
+                                <p>Html, Css, Javascript, SQL, Php</p>
+                            </div>
+                            <div class = "card-footer">
+                                <button id = "githubButton" class = "githubButton" onclick="lightningPage()">Github link</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class = "row">
+                    <div class = "col">
+                        <div class = "card">
+                            <div class = "card-header">
+                                <h2>Stock Sim</h2>
+                            </div>
+                            <div class = "card-body">
+                                <p>The purpose of this project was to create a stock simulation website that functions like a 
+                                    real stock website, however it would use psuedo live data from firebase instead of 
+                                    real stock data. The website also featured a quiz for users to test their knowledge on basic
+                                    stock concepts. The website also featured a blog page for users to see posts made by other
+                                    users they currently follow and will also be able to see their scores on the leaderboard page.
+                                </p>
+                                <br>
+                                <p>Technologies used include:</p>
+                                <p>Html, Css, JavaScript, Python with Flask, and Firebase</p>
+                            </div>
+                            <div class = "card-footer">
+                                <button id = "githubButton" class = "githubButton" onclick="stocksimPage()">Github link</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "col">
+                        <div class = "card">
+                            <div class = "card-header">
+                                <h2>My Portfolio</h2>
+                            </div>
+                            <div class = "card-body">
+                                <p>Add details here</p>
+                                <p>Technologies used include:</p>
+                                <p>HTML, CSS, & Javascript</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </section>
+
+        <footer>
+            <div class = "footer-text">
+                <p>You may also check out my linkedin page below</p>
+                <a href = "https://www.linkedin.com/in/muneeb-khan-a5588316b/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" height="40px" width="40px"/></a>
+                <br><br>
+            </div>
+        </footer>
+
+    </body>
+    <script src = myFunctions.js></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</html>
