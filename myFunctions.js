@@ -63,6 +63,9 @@ function stocksimPage(){
     location.href = "https://github.com/vkadam7/StockMarketApp"
 }
 
+function portfolioPage(){
+    location.href = "https://github.com/MuneebFKhan1/muneebfkhan1.github.io"
+}
 
 // Function for form validation (WIP)
 var c = document.getElementById("contact-form");
